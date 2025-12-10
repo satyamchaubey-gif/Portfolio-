@@ -63,6 +63,8 @@ body {
 .skill-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px; }
 .skill-card h3 { margin: 0 0 8px; }
 .skill-card ul { margin: 0; padding-left: 18px; color: var(--muted); }
+.skill-card:hover{ transform: translateY(-6px); box-shadow: 0 14px 34px var(--shadow); border-color: rgba(255,122,26,0.35); }
+
 
 /* Projects */
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding: 10px 0 60px; }
@@ -130,4 +132,5 @@ input:focus, textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 4px
 
 .social a:hover::after {
   transform: scaleX(1);
+
 }
