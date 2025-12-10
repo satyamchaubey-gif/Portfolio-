@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Satyam Chaubey</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page">
+  <canvas id="particles"></canvas>
+
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="index.html">Satyam Chaubey</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="btn btn-small" href="assets/resume.pdf" download>Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container fade-in">
+    <section class="section">
+      <h1>Selected work</h1>
+      <p>Here are some projects that reflect my approach to engineering and design.</p>
+    </section>
+
+    <section class="project-grid">
+      <article class="project-card" data-project="chatbot">
+        <div class="project-meta">
+          <h3>Conversational AI Assistant</h3>
+          <span class="tag">NLP</span><span class="tag">Node.js</span><span class="tag">React</span>
+        </div>
+        <p>
+          Built a production-ready chatbot with intent detection, context memory,
+          and analytics dashboard. Focused on latency and UX.
+        </p>
+        <div class="project-links">
+          <a class="link" href="#" target="_blank">Live demo</a>
+          <a class="link" href="#" target="_blank">GitHub</a>
+          <button class="btn btn-ghost view-details">Details</button>
+        </div>
+      </article>
+
+      <article class="project-card" data-project="portfolio">
+        <div class="project-meta">
+          <h3>Animated Portfolio System</h3>
+          <span class="tag">Design System</span><span class="tag">CSS Animations</span>
+        </div>
+        <p>
+          Multi-page portfolio with a dynamic, never-ending background,
+          transitions, and component library for rapid iteration.
+        </p>
+        <div class="project-links">
+          <a class="link" href="index.html">Visit</a>
+          <a class="link" href="#" target="_blank">Case study</a>
+          <button class="btn btn-ghost view-details">Details</button>
+        </div>
+      </article>
+
+      <article class="project-card" data-project="cloud">
+        <div class="project-meta">
+          <h3>Cloud Observability Dashboard</h3>
+          <span class="tag">APM</span><span class="tag">Graphs</span><span class="tag">Caching</span>
+        </div>
+        <p>
+          Real-time metrics, alerts, and tracing with caching, streaming updates,
+          and accessible charts optimized for performance.
+        </p>
+        <div class="project-links">
+          <a class="link" href="#" target="_blank">Live demo</a>
+          <a class="link" href="#" target="_blank">GitHub</a>
+          <button class="btn btn-ghost view-details">Details</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 Satyam Chaubey</p>
+      <div class="social">
+        <a href="mailto:satyamchaubey7428@gmail.com">Email</a>
+        <a href="tel:+919953010972">Phone</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
