@@ -256,4 +256,20 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}.cursor-glow {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, rgba(124,58,237,0.6), transparent);
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeOut 0.5s linear;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2);
+  }
 }
