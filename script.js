@@ -76,3 +76,29 @@
     else loop();
   });
 })();
+// ===== SCROLL REVEAL =====
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+});
+
+document.querySelectorAll(".project-card").forEach(card => {
+  card.style.opacity = 0;
+  card.style.transform = "translateY(40px)";
+  observer.observe(card);
+});
+
+// ===== CURSOR GLOW EFFECT =====
+document.addEventListener("mousemove", (e) => {
+  const glow = document.createElement("div");
+  glow.className = "cursor-glow";
+  glow.style.left = e.clientX + "px";
+  glow.style.top = e.clientY + "px";
+  document.body.appendChild(glow);
+
+  setTimeout(() => glow.remove(), 500);
+});
